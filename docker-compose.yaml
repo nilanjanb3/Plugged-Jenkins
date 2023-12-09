@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  jenkins:
+    image: nilanjanb3/plugged-jenkins:latest
+    container_name: jenkins
+    network_mode: host
+    environment:
+      - JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
+      - JENKINS_OPTS="--prefix=/jenkins"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    restart: always
+
+volumes:
+  jenkins_home:
