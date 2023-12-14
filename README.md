@@ -24,5 +24,5 @@ docker run -d \
 ```
 Jenkins will run at: http://<your machine ip / localhost>:8080
 
-> I prefer to run Jenkins in Host Network for a POC, it'll automatically discard the port mapping. 
+> **Note:** I prefer to run Jenkins in Host Network for a POC, it'll automatically discard the port mapping. 
 You can do either of one 😊
