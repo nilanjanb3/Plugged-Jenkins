@@ -9,7 +9,7 @@ cd Plugged-Jenkins
 docker compose up -d
 ```
 
-**Option 2:***
+**Option 2:**
 ```bash
 docker run -d \
   --name jenkins \
