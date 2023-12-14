@@ -22,7 +22,7 @@ docker run -d \
   --restart always \
   nilanjanb3/plugged-jenkins:latest
 ```
-Jenkins will run at: http://<your machine ip / localhost>:8080
+**Jenkins** will run at: http://<your machine ip / localhost>:8080/jenkins
 
 > **Note:** I prefer to run Jenkins in Host Network for a POC, it'll automatically discard the port mapping. 
 You can do either of one 😊
